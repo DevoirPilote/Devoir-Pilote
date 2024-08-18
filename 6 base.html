@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Emporium - Your Path to Success</title>
+<link rel="stylesheet" href="styles.css"> <!-- Replace with your CSS file -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffffff;
+   scroll-behavior:smooth ;
+}
+
+.home {
+    width: 100%;
+    height: 90px;
+    background-color: #f7f8f8;;
+    display: flex;
+    flex-direction: row;
+
+}
+.page1{
+  width: 100%;
+  height: 800vh;
+}
+
+
+h3 {
+    position: relative;
+    font-size: 3.2rem;
+    cursor: pointer;
+    margin: auto;
+ color: #000000;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+nav {
+    position: relative;
+    margin-right: 300px;
+    padding-top: 2.0rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+nav ul li {
+    margin: 0 0.8rem;
+    position: relative;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #70d0d3;
+}
+
+nav ul li.dropdown .submenu {
+    position: absolute;
+    background-color: #22282a;
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(0);
+    top: 100% ;
+    border-radius: 30px;
+
+
+}
+
+nav ul li.dropdown.active .submenu {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+nav ul li.dropdown .submenu li {
+    text-align: center;
+    margin: 8px 5px;
+}
+.sidenav {
+  text-align: left;
+  overflow-x: hidden;
+  position: fixed;
+  width: 250px; /* Adjust as needed */
+  background-color: #161616; /* Example background color */
+  height: 100%; /* Adjust as needed */
+  top: 0;
+  left: 0;
+  padding-top: 60px; /* Adjust to accommodate top bar */
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding-left: 50px;
+  text-align: left;
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255); /* Adjust link color */
+}
+
+.sidenav a:hover {
+  background-color: #ddd; 
+  color: #111;/* Example hover color */
+}
+
+.browsing {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.down {
+  display: none;
+
+}
+
+.down a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black; /* Adjust link color */
+  transition: background-color 0.3s ease; 
+  padding-left: 70px;
+  color: #aacbd1;
+}
+
+.down a:hover {
+  background-color: #ddd; /* Example hover color */
+}
+
+.container{
+padding:0px 200px;
+
+
+}
+.page1{
+ height: 100%;
+  padding-top: 10px;
+}
+.c1{
+  height: 450px;
+  background-color:#3d5a80;
+  padding: 30px 20px; 
+}
+.container-text{
+  display: flex;
+  flex-direction: row;
+  }
+  .devoir{
+    height: 300px;
+    width:500px ;
+  }
+  .upper-label{
+  padding: 0px 80px;
+  }
+  .abc{
+    margin-top: 20px;
+     display: inline-block;
+     margin-left: 10px;
+  }
+  .abb{
+    position: relative;
+
+    font-family: arial;
+    margin-top: 100px;
+  }
+.a {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 150px;
+    margin-right: 250px;
+  }
+.bb{
+  font-size: 70px;
+  font-weight: arial;
+}
+.cc{
+  text-align: right;
+  margin-right: 260px;
+  font-size: 30px;
+}
+.dd{
+  display: inline-block;
+  margin-right: 10px;
+  text-align: end;
+  font-size:22px;
+  text-decoration: none;
+  color: white;
+}
+.d{
+  text-align: end;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.container-dv{
+  padding: 90px 200px;
+}
+.trimestre{
+  display: flex;
+  flex-direction: column;
+height: 400px;
+width: 100%;
+background-color: #98c1d9;
+border-radius: 40px;
+
+}
+.trimestre-top{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+padding: 30px 50px;
+font-size: 20px;
+}
+.trimestre-name{
+  flex: 1;
+  text-align: center;
+  font-size: 70px;
+  margin-right: 70px;
+  margin-bottom: 100px;
+}
+.controle-synthese{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  color: #111;
+}
+.devoir{
+ background-color: rgb(235, 232, 232);
+ border-radius: 40px;
+ height: 220px;
+ width: 400px;
+ color: #111;
+ padding: 20px 20px;
+ font-size: 20px;
+}
+.devoir div{
+  margin-bottom: 40px;
+}
+.btn{
+  position: relative ;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+  transition: all 0.5s;
+  cursor: pointer;
+
+
+}
+.btn-cr{
+  margin-left: 70px;
+
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn-cr:hover{
+  color: #ddd;
+  background-color: #3d5a80;
+  padding: 15px ;
+}
+.btn:hover{
+  color: #ddd;
+  background-color: #3d5a80;
+  padding: 15px ;
+}
+.container-text{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.devoir{
+  flex: 0 0 28.3333%;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+ transition: all 0.5s;
+}
+.devoir:hover{
+  background-color: #98c1d9;
+}
+.navbar {
+            display: flex;
+            margin-left: 30%;
+            padding-top: 2%;
+            padding-left: 8%;
+            padding-right: 8%;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2%;
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(10, 10, 10);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .subnav {
+            float: left;
+        }
+        .subnav .subnavbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: rgb(93, 141, 231);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .subnav:hover .subnavbtn {
+            cursor: pointer;
+        }
+        .subnav-content {
+            padding-top: 5%;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            z-index: 1;
+            display: none;
+            animation: slideIn 1s ease;
+        }
+        .subnav-content a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        .subnav-content a:hover {
+            display: block;
+        }
+        .subnav:hover .subnav-content {
+            display: block;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100%
+        }
+        .subnav:active .subnav-content {
+            display: block;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100%
+        }
+.in-sub{
+
+  font-weight:bold;
+ font-family: arial;
+  flex: 0 0 auto; /* Allow the height to adjust based on content */
+  height: auto;   /* Allow the height to adjust based on content */
+  padding: 10px;  /* Adjust padding as needed for spacing */
+}
+
+.block{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.niveaux{
+  display: flex;
+  flex-direction:column ;
+}
+
+.niveaux a:hover{
+  color: #3a90ca;
+}
+.choix{
+    color: #000000;
+    font-size: 25px;
+    margin-left: 100px;
+margin-top: 50px;
+text-decoration: underline;
+
+}
+.choix-con{
+    height: 100px;
+}
+.sections{
+margin-bottom: 25px;
+
+}
+.section{
+  cursor: pointer;
+  transition: all 1s;
+  padding: 1%;
+    display: flex;
+    border: hsl(0, 0%, 7%) solid;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    box-shadow: 20px 16px 30px 0px rgba(56, 55, 55, 0.3) ;
+
+}
+.az{
+margin-left: 30px;
+
+}
+.b{
+  margin-top: 30px;
+  font-size: 40px;
+    flex: 1;
+    color: #000000;
+    margin-left: 100px;
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+.sc{
+  padding: 50px 300px;
+}
+.section:hover{
+  background-color: #98c1d9;
+}
+img{
+  width: 100px;
+}
+.b:hover{
+  color: #f1f1f1;
+}
+.foot{
+  background-color: rgb(24, 24, 24);
+  height: 20vh;
+
+}
+.p2{
+  text-align: center
+
+ ;
+}
+.as{
+  display: flex;
+  flex-direction: row;
+
+}
+.azer{
+flex: 1;
+}  
+.mp{
+  flex: 1;
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.mp a {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.sdf a {
+ margin-right: 10px;
+}
+.apo{
+  width: 40px;
+}
+.sdr{
+  font-size: 70px; text-align: center;margin-top: 130px;
+}
+.b{
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  @keyframes slideInFromRight {
+    0% {
+    transform: translateX(100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+     opacity: 1;
+    } 
+    }
+    .navbar{
+        display: none;
+        
+    }
+    .dp{  
+              font-size: 30px;
+        
+              margin-left:10px;
+              text-align: center;
+    }
+    .c1{
+height: 200px;
+}
+
+.a{
+  margin-bottom: 200px;
+}
+.sc{
+  padding: 1%;
+}
+.abb{
+  margin-bottom: 200px;
+}
+p{
+  font-size: 35px;
+
+}
+.abb{
+top: -50px;
+}
+.choix{
+  margin-left: 10px;
+}
+.choix-con{
+  margin-left: 10px;
+}
+.section{
+  font-size: 30px;
+}
+.b{margin-top: 35px;
+  font-size: 25px;
+text-align: center;
+margin-left: 10px;
+}
+.abc{
+  margin-top: -40px;
+}
+p{
+  justify-content: nowrap;
+  text-align: center;
+}
+.foot{
+  background-color: rgb(24, 24, 24);
+  height: 15vh;
+
+}
+.p2{
+  text-align: center
+
+ ;
+}
+.as{
+  display: flex;
+  flex-direction: row;
+
+}
+.azer{
+flex: 1;
+height: 77px;
+}  
+.mp{
+  flex: 1;
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.mp a {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.sdf a {
+ margin-right: 10px;
+}
+.sdr{
+  font-size: 27px;
+}
+}
+
+
+</style>
+<header class="home" id="home">
+   
+  <h3 class="dp"> Devoir <span style="color: #36a1d4;">Pilote</span> </h3> 
+
+
+<div class="navbar">
+<a href="#home">Home</a>
+<div class="subnav">
+<button class="subnavbtn">Niveaux <i class="fa fa-caret-down"></i></button>
+<div class="subnav-content">
+ <div class="block">
+ <a href="#company" class="in-sub" style="font-size: 30px;">Primaire-ابتدائي</a>
+ <hr>
+  <div class="niveaux">
+   <a href="1 base.html" >1 ère année</a>
+   <a href="2 base .html">2 ème année</a>
+   <a href="3 base .html">3 ème année</a>
+   <a href="4 base.html">4 ème année</a>
+   <a href="5 base.html">5 ème année</a>
+   <a href="6 base.html" >6 ème année</a>
+  </div>
+</div>
+<div class="block">
+ <a href="#company" class="in-sub" style="font-size: 30px;">Base-اساسي</a>
+ <hr>
+  <div class="niveaux">
+   <a href="7 eme.html">7 ème année</a>
+   <a href="8 eme.html">8 ème année</a>
+   <a href="9 eme.html">9 ème année</a>
+
+  </div>
+</div>
+<div class="block">
+ <a href="#company" class="in-sub" style="font-size: 30px;">Secondaire-ثانوي</a>
+ <hr>
+  <div class="niveaux">
+   <a href="1 ere.html">1 ère année</a>
+   <a  href="2 eme .html">2 ème année</a>
+   <a href="3 eme .html">3 ème année</a>
+
+  </div>
+</div>
+<div class="block">
+ <a href="#company" class="in-sub" style="font-size: 30px;">BAC </a>
+ <hr>
+  <div class="niveaux">
+   <a href="bac scientifique.html"> Bac Scientifique</a>
+   <a href="bac mathematique.html"> Bac Mathematique</a>
+   <a href="bac informatique"> Bac Informatique</a>
+   <a href="bac technique"> Bac Technique</a>
+   <a href="bac eco"> Bac Economie Gestion</a>
+   <a href="bac lettes"> Bac Lettres</a>
+  </div>
+</div>
+
+</div>
+</div> 
+<a href="">contact</a>
+<a >Shop</a>
+</div>
+
+
+</header>
+
+<section class="page1">
+ <div>
+  <div class="c1">
+   <div>
+     <div class="abc">Niveaux</div> <i class="fa-solid fa-angles-right"></i>
+     <div class="abc" >6 éme année </div> 
+   </div>
+   <div class="abb">
+     <p class="sdr">6 éme année primaire </p>
+   </div>
+ </div>
+
+ <section class="sc">
+
+    <div class="section"> 
+        <div class="az"><img src="logo-images/الإيقاظ العلمي.png" ></div>
+        <a class="b" href="#"> الايقاض العلمي</a>
+    </div>
+
+
+    <div class="section"> 
+        <div class="az"><img src="logo-images/الرياضيات.png" ></div>
+        <a class="b" href="#"> الرياضيات</a>
+    </div>
+
+    <div class="section"> 
+        <div class="az"><img src="logo-images/Lecture.png"></div>
+        <a class="b" href="#"> القراءة </a>
+    </div>
+
+    <div class="section"> 
+        <div class="az"><img src="logo-images/langue.png"></div>
+        <a class="b" href="#">  الخط والاملاء</a>
+    </div>
+
+    <div class="section" href="#"> 
+        <div class="az"><img src="logo-images/التربية الإسلامية.png" width="100px"></div>
+        <a class="b" href="#"> التربية الاسلامية</a>
+    </div>
+    <div class="section"> 
+      <div class="az"><img src="logo-images/Production écrite.png" width="100px"></div>
+      <a class="b" href="#"> الانتاج الكتابي</a>
+  </div>
+  <div class="section"> 
+    <div class="az"><img src="logo-images/st73cb68.png" width="100px"></div>
+    <a class="b" href="#"> قواعد اللغة</a>
+</div>
+<div class="section"> 
+    <div class="az"><img src="logo-images/التاريخ.png" width="100px"></div>
+    <a class="b" href="#"> تاريخ </a>
+</div>
+<div class="section"> 
+    <div class="az"><img src="logo-images/الجغرافيا.png" width="100px"></div>
+    <a class="b" href="#"> جغرافيا </a>
+</div>
+<div class="section"> 
+    <div class="az"><img src="logo-images/التربية المدنية.png" width="100px"></div>
+    <a class="b" href="#">  تربية مدنية</a>
+</div>
+  <div class="section"> 
+    <div class="az"><img src="logo-images/1612893947_francais.png" width="100px"></div>
+    <a class="b" href="#">  Francais </a>
+</div>
+<div class="section"> 
+    <div class="az"><img src="logo-images/Anglais.png" width="100px"></div>
+    <a class="b" href="#"> Anglais </a>
+</div>
+
+
+
+</section>
+<footer class="foot">
+  <div class="as">
+    <div class="azer">
+      <h3 style="color: #f1f1f1; font-size: 30px; margin: 20px 20px;"> Devoir <span style="color: #36a1d4;">Pilote</span> </h3> 
+    </div> 
+    <div class="mp">
+      <a href="#"><img class="apo" src="logo-images/f.jpeg" style="border-radius: 50px;" width="30px"></a>
+      <a href="#"><img class="apo" src="logo-images/i.jpeg" style="border-radius: 50px;" width="30px"></a>
+      <a href="#"><img class="apo" src="logo-images/y.webp" width="35px"></a>
+   </div> 
+  </div>
+  <h4 style="text-align: center;color: #595959; background-color: #22282a;">Tous droits réservés © 2024  </h4> 
+</footer>
